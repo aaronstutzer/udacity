@@ -57,6 +57,7 @@ def play_game():
     blank_number = 1
     blank = "___" + str(blank_number) + "___"
     wrong_answers = 0
+    max_wrong_answers = 4
     while blank in text:
         player_answer = raw_input("your answer for blank number " + str(blank_number) + ": ")
         if check_answer(player_answer,answers,blank_number) == True:
@@ -68,7 +69,7 @@ def play_game():
             print text
         else:
             wrong_answers += 1
-            if wrong_answers == 4:
+            if wrong_answers == max_wrong_answers:
                 print "sorry you lost"
                 return
             else:
