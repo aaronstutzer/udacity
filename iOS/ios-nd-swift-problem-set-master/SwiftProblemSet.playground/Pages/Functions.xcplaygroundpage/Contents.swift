@@ -87,10 +87,10 @@ beginsWithVowel(string: "") // false
 // var vowel: [Character] = ["a","e","i","o","u", "A","E","I","O","U"]
 
 func funWithWords(string: String) -> String {
-    let firstLetter = string[string.startIndex]
+    let beginsWithVowel = string[string.startIndex]
     if string == "" {
         return String("")
-    } else if vowel.contains(firstLetter) {
+    } else if vowel.contains(beginsWithVowel) {
         return string.uppercased()
     } else {
         return string.lowercased()

@@ -44,8 +44,8 @@ let reversedNewStringToReverse = String(newArrayOfCharacters)
 - a `String` value representing what a user types into the status update area.
 */
 var hungerLevel: [Int] = [1,2,3]
-var winGame: Int = +1
-var studentBirthday: String = "12/12/2012"
+let winGame: Int = +1 //makes sense to be a constant
+let studentBirthday: String = "12/12/2012" //wasnt thinking right, of course the birthday does not change....
 var userStatusUpdate: String = "hungry"
 /*:
  ****
