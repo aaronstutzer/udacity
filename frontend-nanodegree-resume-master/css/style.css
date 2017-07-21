@@ -20,9 +20,10 @@ h6 {
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry{
   padding: 0 5%;
 }
+
 
 h1 {
   font-size: 40px;
@@ -143,11 +144,14 @@ a {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
 }
 
+.flex-item {
+  padding-right: 10px;
+}
 .center-content {
   padding: 2.5% 5%;
 }
