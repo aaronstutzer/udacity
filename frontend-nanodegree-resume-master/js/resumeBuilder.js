@@ -11,7 +11,7 @@ var bio = {
   "welcomeMessage" : "Hej, hur är läget?",
   "biopic" : "images/awesome_profile_picture.jpg",
   "skills" : ["Windows Server" , "Python", "JS"],
-  "display" : function display() {
+  "display" : function() {
     var formattedName = HTMLheaderName.replace( "%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace( "%data%", bio.role);
     var formattedBiopic = HTMLbioPic.replace("%data%",bio.biopic);
@@ -65,7 +65,7 @@ var work = {
     "description" : "Blablablaaa"
   }
 ],
-  "display" : function display() {
+  "display" : function() {
     for (var job in work.jobs){
       $("#workExperience").append(HTMLworkStart);
 
@@ -103,7 +103,7 @@ var education = {
       "url" : "https://www.udacity.com/course/intro-to-programming-nanodegree--nd000"
     }
   ],
-  "display" : function display() {
+  "display" : function() {
     for (var school in education.schools) {
       $("#education").append(HTMLschoolStart);
 
@@ -150,7 +150,7 @@ var projects = {
       "images" : ["images/Ecuador.png", "images/surf.png"]
     }
   ],
-  "display" : function display() {
+  "display" : function() {
     for (var project in projects.projects) {
       $("#projects").append(HTMLprojectStart);
       if (projects.projects.hasOwnProperty(project)) {
